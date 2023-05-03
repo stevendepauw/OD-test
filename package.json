@@ -9,7 +9,6 @@
       "install": "cd server && npm i && cd ../client && npm i",
       "seed": "cd server && npm run seed",
       "build": "cd client && npm run build",
-      "build-localhost": "PUBLIC_URL=/ react-scripts build",
       "heroku-postbuild": "npm run build"
     },
     "author": "",

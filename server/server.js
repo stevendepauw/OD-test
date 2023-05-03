@@ -25,7 +25,7 @@ const server = new ApolloServer({
 });
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../build/public')));
+    app.use(express.static(path.join(__dirname, '../build')));
   }
   
 app.get('/', (req, res) => {
