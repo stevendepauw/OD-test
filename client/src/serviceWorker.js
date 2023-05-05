@@ -46,12 +46,12 @@ const isLocalhost = Boolean(
   }
   
   function registerValidSW(swUrl, config) {
+    console.log(swUrl)
     navigator.serviceWorker
       .register(swUrl)
       .then(registration => {
         registration.onupdatefound = () => {
           const installingWorker = registration.installing;
-          console.log(installingWorker)
           if (installingWorker == null) {
             return;
             
